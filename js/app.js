@@ -45,3 +45,29 @@
 //         tvshows: []
 //     }
 // }
+
+
+
+// 2. Take it Easy
+
+
+// 1. Make an array that holds all of the colors of the rainbow.
+const rainbow = ['red', 'orange', 'yellow', 'blue', 'indigo', 'violet'];
+
+// 2. Write code that will access "blue" from the rainbow array.
+rainbow[3];
+console.log(rainbow[3]);
+
+// 3. Make an object that is called your name and holds the information about 
+// your favorite food, a hobby, the name of the town that you live in currently, 
+// and your favorite datatype.
+const Chase = {
+    favoritefood: 'Pineapple Pizza',
+    hobby: 'Photography',
+    town: 'Woodland Hills'
+    favoritedatatype: 'objects'
+}
+
+// 4. Write code that will access your hobby from the object that you just created.
+Chase['hobby'];
+Chase.hobby;
