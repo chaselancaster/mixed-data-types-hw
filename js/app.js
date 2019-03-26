@@ -190,12 +190,21 @@ const bondFilms = [
 // console.log(newArr);
 
 // 6. Create a new array oddBonds, of only the Bond films released on odd-numbered years.
-let oddBonds = [];
+// let oddBonds = [];
+// for (let i = 0; i < bondFilms.length; i++) {
+//     if (bondFilms[i].year % 2 !== 0) {
+//         oddBonds.push(bondFilms[i].title)
+//     }
+// }
+// console.log(oddBonds);
+
+// 7. Determine the total cumulative gross of the Bond franchise, 
+// and console.log the result.
+sum = 0;
 for (let i = 0; i < bondFilms.length; i++) {
-    if (bondFilms[i].year % 2 !== 0) {
-        oddBonds.push(bondFilms[i].title)
-    }
+    bondFilms[i].gross = bondFilms[i].gross.slice(1).replace(/,/g,'');
+    sum += Number(bondFilms[i].gross);
 }
-console.log(oddBonds);
+console.log(sum);
 
 
